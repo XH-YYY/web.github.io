@@ -43,6 +43,8 @@ window.onload = function() {
 let keyword = document.querySelector('.keyword'); // 获取输入框
 let searchList = document.querySelector('.searchlist'); // 获取搜索框下拉列表
 
+let searchButtons = document.querySelector('.search-btn');// 获取搜索图标按钮
+
 // 从 localStorage 获取商品数据
 let products = JSON.parse(localStorage.getItem('products')) || []; // 获取存储的商品数据
 
@@ -91,12 +93,25 @@ keyword.addEventListener('mouseenter', function() {
     }
 });
 
-// 鼠标离开搜索框区域时隐藏下拉列表
+// 鼠标离开下拉框时，隐藏下拉列表
 searchList.addEventListener('mouseleave', function() {
     searchList.style.display = 'none';
 });
 
+// 鼠标悬浮在搜索按钮上时，隐藏下拉列表
+searchButtons.addEventListener('mouseenter', function() {
+    searchList.style.display = 'none';
+});
 
+// 为按钮添加点击事件
+searchButtons.addEventListener('click', function(event) {
+    event.preventDefault();  // 防止按钮默认行为（如果有的话）
+
+    // 清空输入框中的内容
+    keyword.value = '';
+
+    window.location.href = "#";  // 跳转到页面顶部
+});
 
 
 //=============================================================================
