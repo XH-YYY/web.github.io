@@ -84,11 +84,16 @@ keyword.addEventListener('input', function() {
     }
 });
 
-// 点击其他地方隐藏下拉列表
-document.addEventListener('click', function(event) {
-    if (!keyword.contains(event.target) && !searchList.contains(event.target)) {
-        searchList.style.display = 'none';
+// 鼠标悬浮在搜索框区域时，保持显示
+keyword.addEventListener('mouseenter', function() {
+    if (keyword.value !== '') {
+        searchList.style.display = 'block';
     }
+});
+
+// 鼠标离开搜索框区域时隐藏下拉列表
+searchList.addEventListener('mouseleave', function() {
+    searchList.style.display = 'none';
 });
 
 

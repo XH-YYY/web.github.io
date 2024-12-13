@@ -102,18 +102,19 @@
     font-size: 32px;
     font-weight: 400;
 }
-.searchlist{
+.searchlist {
     position: absolute;
     left: 0;
     top: 41px;
     display: none;
     width: 650px;
     border: 1px solid #ddd;
-    background-color: #fff;
-    /* background-color: rgb(128, 168, 184); */
-    box-shadow: 1px 2px 1px rgb(0, 0,0,0.1);
+    background-color: #fff; /* 确保背景为不透明的白色 */
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1); /* 让阴影更加柔和 */
+    z-index: 9999; /* 确保下拉框显示在最前面 */
 }
-.searchlist p{
+
+.searchlist p {
     text-align: left;
     padding: 1px 6px;
     font-size: 14px;
@@ -122,6 +123,11 @@
     cursor: pointer;
     color: #666;
 }
+
+.searchlist p:hover {
+    background-color: #FF8F9C; /* 鼠标悬浮时改变背景色 */
+}
+
 /* 头部结束 */
 
 /* 导航开始 */
