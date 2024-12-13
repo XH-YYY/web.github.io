@@ -1,0 +1,1617 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anon购物商城</title>
+    <!-- 引入网页图标 -->
+    <link rel="icon" href="./images/icon.png">
+
+    <!-- 引入css样式 -->
+     <link rel="stylesheet" href="./css/base.css">
+     <link rel="stylesheet" href="./css/index.css">
+     <link rel="stylesheet" href="./css/icon/iconfont.css">
+
+</head>
+<body>
+    <!-- 头部开始 -->
+     <div class="header">
+        <div class="wrap header-box">
+            <div class="logo"></div>
+            <!-- 吸顶区域 -->
+            <div class="search">
+                 <div class="search-m">
+                    <!-- 吸顶用的logo -->
+                    <div class="search_logo"></div>
+                    <div class="form">
+                        <input type="text" class="keyword" placeholder="请输入关键词">
+                        <button><span class="iconfont icon-fangdajing"></span></button>
+                        <div class="searchlist"></div>
+                    </div>
+                    <div class="ico">
+                        <a href="#" class="iconfont icon-geren" title="个人中心"><div></div></a>
+                        <a href="#" class="iconfont icon-aixin" title="喜欢"></a>
+                        <a href="./shoppingCart.html" class="iconfont icon-gouwuche" title="购物车"></a>
+                    </div>
+                 </div>
+            </div>
+        </div>
+     </div>
+     <!-- 头部结束 -->
+
+     <!-- 导航菜单开始 -->
+     <div class="nav">
+        <div class="wrap nav-box">
+            <ul class="nav-menu">
+                <li class="menu-category"><a href="#" class="menu-title">首页</a></li>
+                <li class="menu-category"><a href="#love" class="menu-title">猜你喜欢</a></li>
+                <li class="menu-category"><a href="#menswear" class="menu-title">男装</a></li>
+                <li class="menu-category"><a href="#womenswear" class="menu-title">女装</a></li>
+                <li class="menu-category"><a href="#" class="menu-title">珠宝</a></li>
+                <li class="menu-category"><a href="#" class="menu-title">香水</a></li>
+                <li class="menu-category"><a href="#" class="menu-title">鞋包</a></li>
+                <li class="menu-category"><a href="#today-deals" class="menu-title">今日优惠</a></li>
+            </ul>
+
+        </div>
+    </div>
+     <!-- 导航菜单结束 -->
+
+     <!-- 轮播图开始(未实现) -->
+     <div class="banner">
+        <div class="wrap banner-box">
+            <!-- 图片 -->
+            <ul class="banner-slide">
+                <li><img src="./upload/banner-1.jpg" alt="女装最新时装特卖"></li>
+                <li><img src="./upload/banner-2.jpg" alt="现代太阳镜"></li>
+                <li><img src="./upload/banner-3.jpg" alt="新时尚夏季特卖"></li>
+            </ul>
+            <div class="banner-content">
+                <div class="banner-subtitle">热门项目</div>
+                <h2 class="banner-title">女装最新时装特卖</h2>
+                <div class="banner-text">99.00 元起</div>
+                <div class="banner-btn">立即选购</div>
+            </div>
+        </div>
+    </div>
+     <!-- 轮播图结束 -->
+
+     <!-- 分类区开始 -->
+     <div class="category">
+        <div class="wrap container">
+            <div class="category-item-container">
+                <a href="#" class="category-item">
+                    <!-- 图片 -->
+                    <div class="category-img-box">
+                        <img src="./images/dress.svg" alt="">
+                    </div>
+                    <!-- 内容 -->
+                    <div class="category-content-box">
+                        <div class="category-content-flex">
+                            <h3 class="category-item-title">连衣裙 & 半裙</h3>
+                            <p class="category-item-amount">(53)</p>
+                        </div>
+                        <div class="category-btn">显示全部</div>
+                    </div>
+                </a>
+                <a href="#" class="category-item">
+                    <!-- 图片 -->
+                    <div class="category-img-box">
+                        <img src="./images/coat.svg" alt="">
+                    </div>
+                    <!-- 内容 -->
+                    <div class="category-content-box">
+                        <div class="category-content-flex">
+                            <h3 class="category-item-title">外套</h3>
+                            <p class="category-item-amount">(58)</p>
+                        </div>
+                        <div class="category-btn">显示全部</div>
+                    </div>
+                </a>
+                <a href="#" class="category-item">
+                    <!-- 图片 -->
+                    <div class="category-img-box">
+                        <img src="./images/glasses.svg" alt="">
+                    </div>
+                    <!-- 内容 -->
+                    <div class="category-content-box">
+                        <div class="category-content-flex">
+                            <h3 class="category-item-title">眼镜 & 镜片</h3>
+                            <p class="category-item-amount">(68)</p>
+                        </div>
+                        <div class="category-btn">显示全部</div>
+                    </div>
+                </a>
+                <a href="#" class="category-item">
+                    <!-- 图片 -->
+                    <div class="category-img-box">
+                        <img src="./images/shorts.svg" alt="">
+                    </div>
+                    <!-- 内容 -->
+                    <div class="category-content-box">
+                        <div class="category-content-flex">
+                            <h3 class="category-item-title">短裤 & 牛仔裤</h3>
+                            <p class="category-item-amount">(83)</p>
+                        </div>
+                        <div class="category-btn">显示全部</div>
+                    </div>
+                </a>
+                <a href="#" class="category-item">
+                    <!-- 图片 -->
+                    <div class="category-img-box">
+                        <img src="./images/tee.svg" alt="">
+                    </div>
+                    <!-- 内容 -->
+                    <div class="category-content-box">
+                        <div class="category-content-flex">
+                            <h3 class="category-item-title">T 恤</h3>
+                            <p class="category-item-amount">(35)</p>
+                        </div>
+                        <div class="category-btn">显示全部</div>
+                    </div>
+                </a>
+                <a href="#" class="category-item">
+                    <!-- 图片 -->
+                    <div class="category-img-box">
+                        <img src="./images/jacket.svg" alt="">
+                    </div>
+                    <!-- 内容 -->
+                    <div class="category-content-box">
+                        <div class="category-content-flex">
+                            <h3 class="category-item-title">夹克</h3>
+                            <p class="category-item-amount">(16)</p>
+                        </div>
+                        <div class="category-btn">显示全部</div>
+                    </div>
+                </a>
+                <a href="#" class="category-item">
+                    <!-- 图片 -->
+                    <div class="category-img-box">
+                        <img src="./images/watch.svg" alt="">
+                    </div>
+                    <!-- 内容 -->
+                    <div class="category-content-box">
+                        <div class="category-content-flex">
+                            <h3 class="category-item-title">饰品</h3>
+                            <p class="category-item-amount">(27)</p>
+                        </div>
+                        <div class="category-btn">显示全部</div>
+                    </div>
+                </a>
+                <a href="#" class="category-item">
+                    <!-- 图片 -->
+                    <div class="category-img-box">
+                        <img src="./images/hat.svg" alt="">
+                    </div>
+                    <!-- 内容 -->
+                    <div class="category-content-box">
+                        <div class="category-content-flex">
+                            <h3 class="category-item-title">帽子 & 头饰</h3>
+                            <p class="category-item-amount">(39)</p>
+                        </div>
+                        <div class="category-btn">显示全部</div>
+                    </div>
+                </a>
+            </div>
+            
+        </div>
+     </div>
+     <!-- 分类区结束 -->
+
+     <!-- 商品区开始 -->
+      <div class="product">
+        <div class="wrap product-container">
+            <!-- 侧边栏部分 -->
+            <div class="sidebar">
+                <!-- 商品类别 -->
+                <div class="sidebar-category">
+                    <!-- 侧边栏顶部标题 -->
+                    <div class="sidebar-top">
+                        <h3 class="sidebar-title">类别</h3>
+                    </div>
+                    <!-- 侧边栏商品类别列表 -->
+                    <ul class="sidebar-menu-category-list">
+                         <li class="sidebar-menu-category">
+                            <!-- 侧边栏折叠菜单(手风琴效果) -->
+                            <button class="sidebar-accordion-menu">
+                                <!-- 图片与名称区域 -->
+                                <div class="menu-title-flex">
+                                        <img src="./images/dress.svg" alt="" class="menu-title-img">
+                                        <p class="menu-title">衣服</p>
+                                   
+                                </div>
+                                <i class="menu-icon"></i>
+                            </button>
+                            <!-- 折叠子菜单区域 -->
+                            <ul class="sidebar-submenu-category-list">
+                                <li class="sidebar-submenu-category">
+                                     <a href="#" class="sidebar-submenu-title">
+                                        <p class="product-name">衬衫</p>
+                                        <p class="product-amount">300</p>
+                                     </a>
+                                     <a href="#" class="sidebar-submenu-title">
+                                        <p class="product-name">短裤 & 牛仔裤</p>
+                                        <p class="product-amount">60</p>
+                                     </a>
+                                     <a href="#" class="sidebar-submenu-title">
+                                        <p class="product-name">夹克</p>
+                                        <p class="product-amount">50</p>
+                                     </a>
+                                     <a href="#" class="sidebar-submenu-title">
+                                        <p class="product-name">礼裙 & 连衣裙</p>
+                                        <p class="product-amount">87</p>
+                                     </a>
+                                </li>
+                            </ul>
+
+
+                            
+                            
+                        </li>
+                        <li class="sidebar-menu-category">
+                            <!-- 侧边栏折叠菜单(手风琴效果) -->
+                            <button class="sidebar-accordion-menu">
+                                <!-- 图片与名称区域 -->
+                                <div class="menu-title-flex">
+                                    <img src="./images/shoes.svg" alt="" class="menu-title-img">
+                                    <p class="menu-title">鞋</p>
+                                </div>
+                                <!-- 折叠图标区域 -->
+                                <i class="menu-icon"></i>
+                            </button>
+                            
+                        </li>
+                        <li class="sidebar-menu-category">
+                            <!-- 侧边栏折叠菜单(手风琴效果) -->
+                            <button class="sidebar-accordion-menu">
+                                <!-- 图片与名称区域 -->
+                                <div class="menu-title-flex">
+                                    <img src="./images/jewelry.svg" alt="" class="menu-title-img">
+                                    <p class="menu-title">珠宝</p>
+                                </div>
+                                <!-- 折叠图标区域 -->
+                                <i class="menu-icon"></i>
+                            </button>
+                            
+                        </li>
+                        <li class="sidebar-menu-category">
+                            <!-- 侧边栏折叠菜单(手风琴效果) -->
+                            <button class="sidebar-accordion-menu">
+                                <!-- 图片与名称区域 -->
+                                <div class="menu-title-flex">
+                                    <img src="./images/perfume.svg" alt="" class="menu-title-img">
+                                    <p class="menu-title">香水</p>
+                                </div>
+                                <!-- 折叠图标区域 -->
+                                <i class="menu-icon"></i>
+                            </button>
+                            
+                        </li>
+                        <li class="sidebar-menu-category">
+                            <!-- 侧边栏折叠菜单(手风琴效果) -->
+                            <button class="sidebar-accordion-menu">
+                                <!-- 图片与名称区域 -->
+                                <div class="menu-title-flex">
+                                    <img src="./images/cosmetics.svg" alt="" class="menu-title-img">
+                                    <p class="menu-title">化妆品</p>
+                                </div>
+                                <!-- 折叠图标区域 -->
+                                <i class="menu-icon"></i>
+                            </button>
+                            
+                        </li>
+                        <li class="sidebar-menu-category">
+                            <!-- 侧边栏折叠菜单(手风琴效果) -->
+                            <button class="sidebar-accordion-menu">
+                                <!-- 图片与名称区域 -->
+                                <div class="menu-title-flex">
+                                    <img src="./images/glasses.svg" alt="" class="menu-title-img">
+                                    <p class="menu-title">眼镜</p>
+                                </div>
+                                <!-- 折叠图标区域 -->
+                                <i class="menu-icon"></i>
+                            </button>
+                            
+                        </li>
+                        <li class="sidebar-menu-category">
+                            <!-- 侧边栏折叠菜单(手风琴效果) -->
+                            <button class="sidebar-accordion-menu">
+                                <!-- 图片与名称区域 -->
+                                <div class="menu-title-flex">
+                                    <img src="./images/bag.svg" alt="" class="menu-title-img">
+                                    <p class="menu-title">包</p>
+                                </div>
+                                <!-- 折叠图标区域 -->
+                                <i class="menu-icon"></i>
+                            </button>
+                            
+                        </li>
+
+
+
+                    </ul>
+                    
+                </div>
+                <!-- 畅销商品展示区 -->
+                 <div class="product-showcase">
+                    <h3>畅销商品</h3>
+                    <div class="showcase-container">
+                        <div class="showcase-flex">
+                            <a href="#" class="showcase-img-box">
+                                <img src="./upload/婴儿布鞋.jpg" alt="" class="showcase-img">
+                            </a>
+                            <div class="showcase-content">
+                                <div class="showcase-title">婴儿布鞋</div>
+                                <div class="showcase-rating">
+                                    <div class="iconfont icon-shixinxingxing"></div>
+                                    <div class="iconfont icon-shixinxingxing"></div>
+                                    <div class="iconfont icon-shixinxingxing"></div>
+                                    <div class="iconfont icon-shixinxingxing"></div>
+                                    <div class="iconfont icon-shixinxingxing"></div>
+                                </div>
+                                <div class="price-box">
+                                    <del>60.00 元</del>
+                                    <p class="price">40.00 元</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="showcase-flex">
+                            <a href="#" class="showcase-img-box">
+                                <img src="./upload/男士连帽衫.jpg" alt="" class="showcase-img">
+                            </a>
+                            <div class="showcase-content">
+                                <div class="showcase-title">男士连帽衫 T 恤</div>
+                                <div class="showcase-rating">
+                                    <div class="iconfont icon-shixinxingxing"></div>
+                                    <div class="iconfont icon-shixinxingxing"></div>
+                                    <div class="iconfont icon-shixinxingxing"></div>
+                                    <div class="iconfont icon-shixinxingxing"></div>
+                                </div>
+                                <div class="price-box">
+                                    <del>88.00 元</del>
+                                    <p class="price">188.00 元</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="showcase-flex">
+                            <a href="#" class="showcase-img-box">
+                                <img src="./upload/女童t恤.jpg" alt="" class="showcase-img">
+                            </a>
+                            <div class="showcase-content">
+                                <div class="showcase-title">女童 T 恤</div>
+                                <div class="showcase-rating">
+                                    <div class="iconfont icon-shixinxingxing"></div>
+                                    <div class="iconfont icon-shixinxingxing"></div>
+                                    <div class="iconfont icon-shixinxingxing"></div>
+                                    <div class="iconfont icon-shixinxingxing"></div>
+                                </div>
+                                <div class="price-box">
+                                    <del>79.00 元</del>
+                                    <p class="price">128.00 元</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="showcase-flex">
+                            <a href="#" class="showcase-img-box">
+                                <img src="./upload/男士礼帽.jpg" alt="" class="showcase-img">
+                            </a>
+                            <div class="showcase-content">
+                                <div class="showcase-title">男士礼帽</div>
+                                <div class="showcase-rating">
+                                    <div class="iconfont icon-shixinxingxing"></div>
+                                    <div class="iconfont icon-shixinxingxing"></div>
+                                    <div class="iconfont icon-shixinxingxing"></div>
+                                    <div class="iconfont icon-shixinxingxing"></div>
+                                    <div class="iconfont icon-shixinxingxing"></div>
+                                </div>
+                                <div class="price-box">
+                                    <del>99.00 元</del>
+                                    <p class="price">168.00 元</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                 </div>
+            </div>
+
+            <!-- 商品展示区 -->
+            <div class="product-box">
+                <!-- 商品推荐区 -->
+                <div class="product-box-flex">
+                    <!-- 新品区 -->
+                    <div class="product-box-showcase">
+                        <h2 class="title">新品上市</h2>
+                        <div class="product-box-showcase-container">
+                            <!-- 商品卡片 -->
+                            <div class="product-card">
+                                <a href="#" class="product-card-img-box">
+                                    <img src="./upload/clothes-1.jpg" alt="">
+                                </a>
+                                <div class="product-card-content">
+                                    <a href="#">
+                                        <h4 class="product-card-title">休闲短款全袖 T 恤</h4>
+                                    </a>
+                                    <a href="#" class="product-card-category">衣服</a>
+                                    <div class="product-card-price-box">
+                                        <p class="price">45.00 元</p>
+                                        <del>62.00 元</del>
+                                    </div>                                
+                                </div>  
+                            </div>
+                            <div class="product-card">
+                                <a href="#" class="product-card-img-box">
+                                    <img src="./upload/clothes-2.jpg" alt="">
+                                </a>
+                                <div class="product-card-content">
+                                    <a href="#">
+                                        <h4 class="product-card-title">女孩 pnk Embro 设计上衣</h4>
+                                    </a>
+                                    <a href="#" class="product-card-category">衣服</a>
+                                    <div class="product-card-price-box">
+                                        <p class="price">61.00 元</p>
+                                        <del>80.00 元</del>
+                                    </div>                                
+                                </div>  
+                            </div>
+                            <div class="product-card">
+                                <a href="#" class="product-card-img-box">
+                                    <img src="./upload/clothes-3.jpg" alt="">
+                                </a>
+                                <div class="product-card-content">
+                                    <a href="#">
+                                        <h4 class="product-card-title">黑色花卉裹身中长半身裙</h4>
+                                    </a>
+                                    <a href="#" class="product-card-category">裙子</a>
+                                    <div class="product-card-price-box">
+                                        <p class="price">199.00 元</p>
+                                        <del>220.00 元</del>
+                                    </div>                                
+                                </div>  
+                            </div>
+                            <div class="product-card">
+                                <a href="#" class="product-card-img-box">
+                                    <img src="./upload/shirt-1.jpg" alt="">
+                                </a>
+                                <div class="product-card-content">
+                                    <a href="#">
+                                        <h4 class="product-card-title">Pure Garment 染色棉衬衫</h4>
+                                    </a>
+                                    <a href="#" class="product-card-category">男装</a>
+                                    <div class="product-card-price-box">
+                                        <p class="price">245.00 元</p>
+                                        <del>360.00 元</del>
+                                    </div>                                
+                                </div>  
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- 潮流区 -->
+                    <div class="product-box-showcase">
+                        <h2 class="title">趋势</h2>
+                        <div class="product-box-showcase-container">
+                            <!-- 商品卡片 -->
+                            <div class="product-card">
+                                <a href="#" class="product-card-img-box">
+                                    <img src="./upload/sports-1.jpg" alt="">
+                                </a>
+                                <div class="product-card-content">
+                                    <a href="#">
+                                        <h4 class="product-card-title">跑步和徒步鞋 - 白色</h4>
+                                    </a>
+                                    <a href="#" class="product-card-category">体育</a>
+                                    <div class="product-card-price-box">
+                                        <p class="price">299 元</p>
+                                        <del>499.00 元</del>
+                                    </div>                                
+                                </div>  
+                            </div>
+                            <div class="product-card">
+                                <a href="#" class="product-card-img-box">
+                                    <img src="./upload/sports-2.jpg" alt="">
+                                </a>
+                                <div class="product-card-content">
+                                    <a href="#">
+                                        <h4 class="product-card-title">徒步和跑步鞋 - 黑色</h4>
+                                    </a>
+                                    <a href="#" class="product-card-category">体育</a>
+                                    <div class="product-card-price-box">
+                                        <p class="price">600.00 元</p>
+                                        <del>799.00 元</del>
+                                    </div>                                
+                                </div>  
+                            </div>
+                            <div class="product-card">
+                                <a href="#" class="product-card-img-box">
+                                    <img src="./upload/party-wear-1.jpg" alt="">
+                                </a>
+                                <div class="product-card-content">
+                                    <a href="#">
+                                        <h4 class="product-card-title">女士派对穿着鞋</h4>
+                                    </a>
+                                    <a href="#" class="product-card-category">派对服装</a>
+                                    <div class="product-card-price-box">
+                                        <p class="price">399.00 元</p>
+                                        <del>499.00 元</del>
+                                    </div>                                
+                                </div>  
+                            </div>
+                            <div class="product-card">
+                                <a href="#" class="product-card-img-box">
+                                    <img src="./upload/sports-3.jpg" alt="">
+                                </a>
+                                <div class="product-card-content">
+                                    <a href="#">
+                                        <h4 class="product-card-title">运动 Claw 女鞋</h4>
+                                    </a>
+                                    <a href="#" class="product-card-category">体育</a>
+                                    <div class="product-card-price-box">
+                                        <p class="price">199.00 元</p>
+                                        <del>299.00 元</del>
+                                    </div>                                
+                                </div>  
+                            </div>
+                        </div>
+                    </div>
+                    
+                     <!-- 好评区 -->
+                     <div class="product-box-showcase">
+                        <h2 class="title">最高评价</h2>
+                        <div class="product-box-showcase-container">
+                            <!-- 商品卡片 -->
+                            <div class="product-card">
+                                <a href="#" class="product-card-img-box">
+                                    <img src="./upload/watch-3.jpg" alt="">
+                                </a>
+                                <div class="product-card-content">
+                                    <a href="#">
+                                        <h4 class="product-card-title">Pocket Watch 皮革手包</h4>
+                                    </a>
+                                    <a href="#" class="product-card-category">手表</a>
+                                    <div class="product-card-price-box">
+                                        <p class="price">499 元</p>
+                                        <del>699.00 元</del>
+                                    </div>                                
+                                </div>  
+                            </div>
+                            <div class="product-card">
+                                <a href="#" class="product-card-img-box">
+                                    <img src="./upload/jewellery-3.jpg" alt="">
+                                </a>
+                                <div class="product-card-content">
+                                    <a href="#">
+                                        <h4 class="product-card-title">银色 Deer Heart 项链</h4>
+                                    </a>
+                                    <a href="#" class="product-card-category">珠宝</a>
+                                    <div class="product-card-price-box">
+                                        <p class="price">1299.00 元</p>
+                                        <del>2199.00 元</del>
+                                    </div>                                
+                                </div>  
+                            </div>
+                            <div class="product-card">
+                                <a href="#" class="product-card-img-box">
+                                    <img src="./upload/perfume.jpg" alt="">
+                                </a>
+                                <div class="product-card-content">
+                                    <a href="#">
+                                        <h4 class="product-card-title">Titan 100 毫升女士香水</h4>
+                                    </a>
+                                    <a href="#" class="product-card-category">香水</a>
+                                    <div class="product-card-price-box">
+                                        <p class="price">399.00 元</p>
+                                        <del>499.00 元</del>
+                                    </div>                                
+                                </div>  
+                            </div>
+                            <div class="product-card">
+                                <a href="#" class="product-card-img-box">
+                                    <img src="./upload/belt.jpg" alt="">
+                                </a>
+                                <div class="product-card-content">
+                                    <a href="#">
+                                        <h4 class="product-card-title">男士皮革双面腰带</h4>
+                                    </a>
+                                    <a href="#" class="product-card-category">皮带</a>
+                                    <div class="product-card-price-box">
+                                        <p class="price">199.00 元</p>
+                                        <del>299.00 元</del>
+                                    </div>                                
+                                </div>  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                 <!-- 今日特惠推荐 -->
+                <div class="product-featured" id="today-deals">
+                    <h2>今日特惠</h2>
+                    <div class="product-featured-box">
+                        <div class="product-featured-container">
+                            <div class="product_f">
+                                <div class="product_f-img-box">
+                                    <img src="./upload/shampoo.jpg" alt="">
+                                </div>
+                                <div class="product_f-content">
+                                    <div class="product_f-showcase-rating">
+                                        <div class="iconfont icon-shixinxingxing"></div>
+                                        <div class="iconfont icon-shixinxingxing"></div>
+                                        <div class="iconfont icon-shixinxingxing"></div>
+                                    </div>
+                                    <a href="#">
+                                        <h3 class="product_f-title">洗发水、护发素和洗面奶包</h3>
+                                    </a>
+                                    <p class="showcase-desc">
+                                        Lorem ipsum dolor sit amet consectetur Lorem ipsum
+                                        dolor dolor sit amet consectetur Lorem ipsum dolor
+                                    </p>
+                                    <div class="product_f-price-box">
+                                        <p class="price">289.00 元</p>
+                                        <del>399.00 元</del>
+                                    </div>
+                                    <button class="add-cart-btn">加入购物车</button>
+                                    <div class="showcase-status">
+                                        <div class="wrapper">
+                                            <p><font>已售出:&nbsp;&nbsp;</font><b id="sold-count">20</b></p>
+                                            <p><font>可供应:&nbsp;&nbsp;</font><b id="supply-count">60</b></p>
+                                        </div>
+                                        <div class="scrollbar-status-bar">
+                                            <!-- 背景条 -->
+                                            <div class="scrollbar-bar">
+                                                <!-- 已售出状态条 -->
+                                                <div class="scrollbar-fill" id="scrollbar-fill"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="countdown-box">
+                                        <p class="countdown-desc">快点！离优惠结束还剩： </p>
+                                        <!-- 倒计时器 -->
+                                        <div class="countdown">
+                                            <div class="countdown-content" id="days">
+                                                <b>1</b>
+                                                <p>天</p>
+                                            </div>
+                                            <div class="countdown-content" id="hours">
+                                                <b>23</b>
+                                                <p>时</p>
+                                            </div>
+                                            <div class="countdown-content" id="minutes">
+                                                <b>59</b>
+                                                <p>分</p>
+                                            </div>
+                                            <div class="countdown-content" id="seconds">
+                                                <b>59</b>
+                                                <p>秒</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 猜你喜欢商品区 -->
+                <div  class="product-main" id="love">
+                    <h2>猜你喜欢</h2>
+                    <!-- 商品列表（网格布局） -->
+                     <div class="product-grid">
+                        <div class="product-main-card">
+                            <div class="card-img">
+                                <img src="./upload/Recommended/jacket-2.jpg" alt="">
+                            </div>
+                            <!-- 卡片内容 -->
+                            <div class="card-content">
+                                <div class="card-category">夹克</div>
+                                <a href="#">
+                                    <h3 class="card-title">男士冬季皮革夹克</h3>
+                                </a>
+                                <div class="card-rating">
+                                    <div class="iconfont icon-shixinxingxing"></div>
+                                    <div class="iconfont icon-shixinxingxing"></div>
+                                    <div class="iconfont icon-shixinxingxing"></div>
+                                    <div class="iconfont icon-shixinxingxing"></div>
+                                </div>
+                                <div class="card-price-box">
+                                    <p>￥49.00</p>
+                                    <del>￥79.00</del>
+                                </div>
+                                <!-- 加入购物车 -->
+                                <div class="add-to-cart">
+                                    <a href="#" class="add-to-cart-btn" data-name="男士冬季皮革夹克" data-price="49.00" data-style="棕色">加入购物车</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-main-card">
+                            <div class="card-img">
+                                <img src="./upload/Recommended/shirt-2.jpg" alt="">
+                            </div>
+                            <div class="card-content">
+                                <div class="card-category">衬衫</div>
+                                <a href="#">
+                                    <h3 class="card-title">Pure Garment染色棉衬衫</h3>
+                                </a>
+                                <div class="card-rating">
+                                    <div class="iconfont icon-shixinxingxing"></div>
+                                    <div class="iconfont icon-shixinxingxing"></div>
+                                    <div class="iconfont icon-shixinxingxing"></div>
+                                
+                                </div>
+                                <div class="card-price-box">
+                                    <p>
+                                        ￥<span class="current-price">99.00</span>
+                                    </p>
+                                    <del>
+                                        ￥<span class="original-price">129.00</span>
+                                    </del>
+                                    
+                                </div>
+                                 <!-- 加入购物车 -->
+                                 <div class="add-to-cart">
+                                    <a href="#" class="add-to-cart-btn">加入购物车</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-main-card">
+                            <div class="card-img">
+                                <img src="./upload/Recommended/jacket-6.jpg" alt="">
+                            </div>
+                            <div class="card-content">
+                                <div class="card-category">夹克</div>
+                                <a href="#">
+                                    <h3 class="card-title">MEN Yarn抓绒全拉链夹克</h3>
+                                </a>
+                                <div class="card-rating">
+                                    <div class="iconfont icon-shixinxingxing"></div>
+                                    <div class="iconfont icon-shixinxingxing"></div>
+                                    <div class="iconfont icon-shixinxingxing"></div>
+                                    <div class="iconfont icon-shixinxingxing"></div>
+                                </div>
+                                <div class="card-price-box">
+                                    <p>
+                                        ￥<span class="current-price">229.00</span>
+                                    </p>
+                                    <del>
+                                        ￥<span class="original-price">279.00</span>
+                                    </del>
+                                    
+                                </div>
+                                 <!-- 加入购物车 -->
+                                 <div class="add-to-cart">
+                                    <a href="#" class="add-to-cart-btn">加入购物车</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-main-card">
+                            <div class="card-img">
+                                <img src="./upload/Recommended/clothes-4.jpg" alt="">
+                            </div>
+                            <div class="card-content">
+                                <div class="card-category">裙子</div>
+                                <a href="#">
+                                    <h3 class="card-title">黑色花卉裹身中长半身裙</h3>
+                                </a>
+                                <div class="card-rating">
+                                    <div class="iconfont icon-shixinxingxing"></div>
+                                    <div class="iconfont icon-shixinxingxing"></div>
+                                    <div class="iconfont icon-shixinxingxing"></div>
+                                    <div class="iconfont icon-shixinxingxing"></div>
+                                    <div class="iconfont icon-shixinxingxing"></div>
+                                </div>
+                                <div class="card-price-box">
+                                    <p>
+                                        ￥<span class="current-price">149.00</span>
+                                    </p>
+                                    <del>
+                                        ￥<span class="original-price">179.00</span>
+                                    </del>
+                                </div>
+                                 <!-- 加入购物车 -->
+                                 <div class="add-to-cart">
+                                    <a href="#" class="add-to-cart-btn">加入购物车</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-main-card">
+                            <div class="card-img">
+                                <img src="./upload/Recommended/shoe-2_1.jpg" alt="">
+                            </div>
+                            <div class="card-content">
+                                <div class="card-category">休闲</div>
+                                <a href="#">
+                                    <h3 class="card-title">男士 Brown 鞋</h3>
+                                </a>
+                                <div class="card-rating">
+                                    <div class="iconfont icon-shixinxingxing"></div>
+                                    <div class="iconfont icon-shixinxingxing"></div>
+                                    <div class="iconfont icon-shixinxingxing"></div>
+                                    <div class="iconfont icon-shixinxingxing"></div>
+                                </div>
+                                <div class="card-price-box">
+                                    <p>
+                                        ￥<span class="current-price">229.00</span>
+                                    </p>
+                                    <del>
+                                        ￥<span class="original-price">279.00</span>
+                                    </del>
+                                </div>
+                                 <!-- 加入购物车 -->
+                                 <div class="add-to-cart">
+                                    <a href="#" class="add-to-cart-btn">加入购物车</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-main-card">
+                            <div class="card-img">
+                                <img src="./upload/Recommended/watch-4.jpg" alt="">
+                            </div>
+                            <div class="card-content">
+                                <div class="card-category">手表</div>
+                                <a href="#">
+                                    <h3 class="card-title">Pocket Watch 皮革手表</h3>
+                                </a>
+                                <div class="card-rating">
+                                    <div class="iconfont icon-shixinxingxing"></div>
+                                    <div class="iconfont icon-shixinxingxing"></div>
+                                    <div class="iconfont icon-shixinxingxing"></div>
+                                    <div class="iconfont icon-shixinxingxing"></div>
+                                    <div class="iconfont icon-shixinxingxing"></div>
+                                </div>
+                                <div class="card-price-box">
+                                    <p>
+                                        ￥<span class="current-price">2249.00</span>
+                                    </p>
+                                    <del>
+                                        ￥<span class="original-price">3099.00</span>
+                                    </del>                                    
+                                </div>
+                                 <!-- 加入购物车 -->
+                                 <div class="add-to-cart">
+                                    <a href="#" class="add-to-cart-btn">加入购物车</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-main-card">
+                            <div class="card-img">
+                                <img src="./upload/Recommended/watch-2.jpg" alt="">
+                            </div>
+                            <div class="card-content">
+                                <div class="card-category">手表</div>
+                                <a href="#">
+                                    <h3 class="card-title">Apple Watch 10s手表</h3>
+                                </a>
+                                <div class="card-rating">
+                                    <div class="iconfont icon-shixinxingxing"></div>
+                                    <div class="iconfont icon-shixinxingxing"></div>
+                                    <div class="iconfont icon-shixinxingxing"></div>
+                                    <div class="iconfont icon-shixinxingxing"></div>
+                                
+                                </div>
+                                <div class="card-price-box">
+                                    <p>
+                                        ￥<span class="current-price">2999.00</span>
+                                    </p>
+                                    <del>
+                                        ￥<span class="original-price">3199.00</span>
+                                    </del>                                    
+                                </div>
+                                 <!-- 加入购物车 -->
+                                 <div class="add-to-cart">
+                                    <a href="#" class="add-to-cart-btn">加入购物车</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-main-card">
+                            <div class="card-img">
+                                <img src="./upload/Recommended/party-wear-2.jpg" alt="">
+                            </div>
+                            <div class="card-content">
+                                <div class="card-category">派对装</div>
+                                <a href="#">
+                                    <h3 class="card-title">女士派对高跟鞋</h3>
+                                </a>
+                                <div class="card-rating">
+                                    <div class="iconfont icon-shixinxingxing"></div>
+                                    <div class="iconfont icon-shixinxingxing"></div>
+                                    <div class="iconfont icon-shixinxingxing"></div>
+                                    <div class="iconfont icon-shixinxingxing"></div>
+                                    <div class="iconfont icon-shixinxingxing"></div>
+                                </div>
+                                <div class="card-price-box">
+                                    <p>
+                                        ￥<span class="current-price">299.00</span>
+                                    </p>
+                                    <del>
+                                        ￥<span class="original-price">339.00</span>
+                                    </del>                                    
+                                </div>
+                                 <!-- 加入购物车 -->
+                                 <div class="add-to-cart">
+                                    <a href="#" class="add-to-cart-btn">加入购物车</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-main-card">
+                            <div class="card-img">
+                                <img src="./upload/Recommended/jacket-4.jpg" alt="">
+                            </div>
+                            <div class="card-content">
+                                <div class="card-category">夹克</div>
+                                <a href="#">
+                                    <h3 class="card-title">男士冬季皮革夹克</h3>
+                                </a>
+                                <div class="card-rating">
+                                    <div class="iconfont icon-shixinxingxing"></div>
+                                    <div class="iconfont icon-shixinxingxing"></div>
+                                    <div class="iconfont icon-shixinxingxing"></div>
+                                    <div class="iconfont icon-shixinxingxing"></div>
+                                
+                                </div>
+                                <div class="card-price-box">
+                                    <p>￥399.00</p>
+                                    <del>￥499.00</del>
+                                </div>
+                                 <!-- 加入购物车 -->
+                                 <div class="add-to-cart">
+                                    <a href="#" class="add-to-cart-btn">加入购物车</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-main-card">
+                            <div class="card-img">
+                                <img src="./upload/Recommended/shorts-2.jpg" alt="">
+                            </div>
+                            <div class="card-content">
+                                <div class="card-category">短裤</div>
+                                <a href="#">
+                                    <h3 class="card-title">Better Basics 法式毛圈布运动短裤</h3>
+                                </a>
+                                <div class="card-rating">
+                                    <div class="iconfont icon-shixinxingxing"></div>
+                                    <div class="iconfont icon-shixinxingxing"></div>
+                                    <div class="iconfont icon-shixinxingxing"></div>
+                                    <div class="iconfont icon-shixinxingxing"></div>
+                                    <div class="iconfont icon-shixinxingxing"></div>
+                                </div>
+                                <div class="card-price-box">
+                                    <p>
+                                        ￥<span class="current-price">399.00</span>
+                                    </p>
+                                    <del>
+                                        ￥<span class="original-price">499.00</span>
+                                    </del>                                    
+                                </div>
+                                 <!-- 加入购物车 -->
+                                 <div class="add-to-cart">
+                                    <a href="#" class="add-to-cart-btn">加入购物车</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-main-card">
+                            <div class="card-img">
+                                <img src="./upload/Recommended/sports-4.jpg" alt="">
+                            </div>
+                            <div class="card-content">
+                                <div class="card-category">体育</div>
+                                <a href="#">
+                                    <h3 class="card-title">徒步和跑步鞋-黑色</h3>
+                                </a>
+                                <div class="card-rating">
+                                    <div class="iconfont icon-shixinxingxing"></div>
+                                    <div class="iconfont icon-shixinxingxing"></div>
+                                    <div class="iconfont icon-shixinxingxing"></div>
+                                    <div class="iconfont icon-shixinxingxing"></div>
+                                    
+                                </div>
+                                <div class="card-price-box">
+                                    <p>
+                                        ￥<span class="current-price">249.00</span>
+                                    </p>
+                                    <del>
+                                        ￥<span class="original-price">279.00</span>
+                                    </del>                                    
+                                </div>
+                                 <!-- 加入购物车 -->
+                                 <div class="add-to-cart">
+                                    <a href="#" class="add-to-cart-btn">加入购物车</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-main-card">
+                            <div class="card-img">
+                                <img src="./upload/Recommended/shoe-1_1.jpg" alt="">
+                            </div>
+                            <div class="card-content">
+                                <div class="card-category">正式</div>
+                                <a href="#">
+                                    <h3 class="card-title">男士皮革正装鞋</h3>
+                                </a>
+                                <div class="card-rating">
+                                    <div class="iconfont icon-shixinxingxing"></div>
+                                    <div class="iconfont icon-shixinxingxing"></div>
+                                    <div class="iconfont icon-shixinxingxing"></div>
+                                    <div class="iconfont icon-shixinxingxing"></div>
+                                    <div class="iconfont icon-shixinxingxing"></div>
+                                </div>
+                                <div class="card-price-box">
+                                    <p>
+                                        ￥<span class="current-price">149.00</span>
+                                    </p>
+                                    <del>
+                                        ￥<span class="original-price">179.00</span>
+                                    </del>                                    
+                                </div>
+                                 <!-- 加入购物车 -->
+                                 <div class="add-to-cart">
+                                    <a href="#" class="add-to-cart-btn">加入购物车</a>
+                                </div>
+                            </div>
+                        </div>
+                     </div>
+                </div>
+            
+                <!-- 男装商品区 -->
+                <div class="product-main" id="menswear">
+                    <h2>男装</h2>
+                    <!-- 商品列表（网格布局） -->
+                     <div class="product-grid">
+                        <div class="product-main-card">
+                            <div class="card-img">
+                                <img src="./upload/Recommended/jacket-4.jpg" alt="">
+                            </div>
+                            <!-- 卡片内容 -->
+                            <div class="card-content">
+                                <div class="card-category">夹克</div>
+                                <a href="#">
+                                    <h3 class="card-title">男士时尚黑色夹克</h3>
+                                </a>
+                                <div class="card-rating">
+                                    <div class="iconfont icon-shixinxingxing"></div>
+                                    <div class="iconfont icon-shixinxingxing"></div>
+                                    <div class="iconfont icon-shixinxingxing"></div>
+                                    <div class="iconfont icon-shixinxingxing"></div>
+                                </div>
+                                <div class="card-price-box">
+                                    <p>
+                                        ￥<span class="current-price">299.00</span>
+                                    </p>
+                                    <del>
+                                        ￥<span class="original-price">399.00</span>
+                                    </del>
+                                </div>
+                                <!-- 加入购物车 -->
+                                <div class="add-to-cart">
+                                    <a href="#" class="add-to-cart-btn">加入购物车</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-main-card">
+                            <div class="card-img">
+                                <img src="./upload/Recommended/shirt-2.jpg" alt="">
+                            </div>
+                            <div class="card-content">
+                                <div class="card-category">衬衫</div>
+                                <a href="#">
+                                    <h3 class="card-title">男士优雅白色长袖衬衫</h3>
+                                </a>
+                                <div class="card-rating">
+                                    <div class="iconfont icon-shixinxingxing"></div>
+                                    <div class="iconfont icon-shixinxingxing"></div>
+                                    <div class="iconfont icon-shixinxingxing"></div>
+                                    <div class="iconfont icon-shixinxingxing"></div>
+                                </div>
+                                <div class="card-price-box">
+                                    <p>
+                                        ￥<span class="current-price">199.00</span>
+                                    </p>
+                                    <del>
+                                        ￥<span class="original-price">299.00</span>
+                                    </del>
+                                </div>
+                                 <!-- 加入购物车 -->
+                                 <div class="add-to-cart">
+                                    <a href="#" class="add-to-cart-btn">加入购物车</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-main-card">
+                            <div class="card-img">
+                                <img src="./upload/Recommended/jacket-6.jpg" alt="">
+                            </div>
+                            <div class="card-content">
+                                <div class="card-category">大衣</div>
+                                <a href="#">
+                                    <h3 class="card-title">冬季加厚羊毛大衣</h3>
+                                </a>
+                                <div class="card-rating">
+                                    <div class="iconfont icon-shixinxingxing"></div>
+                                    <div class="iconfont icon-shixinxingxing"></div>
+                                    <div class="iconfont icon-shixinxingxing"></div>
+                                    <div class="iconfont icon-shixinxingxing"></div>
+                                    <div class="iconfont icon-shixinxingxing"></div>
+                                </div>
+                                <div class="card-price-box">
+                                    <p>￥499.00</p>
+                                    <del>￥699.00</del>
+                                </div>
+                                <!-- 加入购物车 -->
+                                <div class="add-to-cart">
+                                    <a href="#" class="add-to-cart-btn">加入购物车</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-main-card">
+                            <div class="card-img">
+                                <img src="./upload/Recommended/jacket-2.jpg" alt="">
+                            </div>
+                            <div class="card-content">
+                                <div class="card-category">毛衣</div>
+                                <a href="#">
+                                    <h3 class="card-title">经典款羊绒毛衣</h3>
+                                </a>
+                                <div class="card-rating">
+                                    <div class="iconfont icon-shixinxingxing"></div>
+                                    <div class="iconfont icon-shixinxingxing"></div>
+                                    <div class="iconfont icon-shixinxingxing"></div>
+                                    <div class="iconfont icon-shixinxingxing"></div>
+                                    <div class="iconfont icon-shixinxingxing"></div>
+                                </div>
+                                <div class="card-price-box">
+                                    <p>￥299.00</p>
+                                    <del>￥399.00</del>
+                                </div>
+                                <!-- 加入购物车 -->
+                                <div class="add-to-cart">
+                                    <a href="#" class="add-to-cart-btn">加入购物车</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 产品卡片结束 -->
+                    </div>
+                </div>
+
+                <!-- 女装商品区 -->
+                <div class="product-main" id="womenswear">
+                    <h2>女装</h2>
+                    <!-- 商品列表（网格布局） -->
+                    <div class="product-grid">
+                        <div class="product-main-card">
+                            <div class="card-img">
+                                <img src="./upload/Recommended/clothes-4.jpg" alt="">
+                            </div>
+                            <!-- 卡片内容 -->
+                            <div class="card-content">
+                                <div class="card-category">连衣裙</div>
+                                <a href="#">
+                                    <h3 class="card-title">优雅碎花连衣裙</h3>
+                                </a>
+                                <div class="card-rating">
+                                    <div class="iconfont icon-shixinxingxing"></div>
+                                    <div class="iconfont icon-shixinxingxing"></div>
+                                    <div class="iconfont icon-shixinxingxing"></div>
+                                    <div class="iconfont icon-shixinxingxing"></div>
+                                </div>
+                                <div class="card-price-box">
+                                    <p>￥299.00</p>
+                                    <del>￥399.00</del>
+                                </div>
+                                <!-- 加入购物车 -->
+                                <div class="add-to-cart">
+                                    <a href="#" class="add-to-cart-btn">加入购物车</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-main-card">
+                            <div class="card-img">
+                                <img src="./upload/Recommended/shirt-2.jpg" alt="">
+                            </div>
+                            <div class="card-content">
+                                <div class="card-category">衬衫</div>
+                                <a href="#">
+                                    <h3 class="card-title">经典白色衬衫</h3>
+                                </a>
+                                <div class="card-rating">
+                                    <div class="iconfont icon-shixinxingxing"></div>
+                                    <div class="iconfont icon-shixinxingxing"></div>
+                                    <div class="iconfont icon-shixinxingxing"></div>
+                                    <div class="iconfont icon-shixinxingxing"></div>
+                                </div>
+                                <div class="card-price-box">
+                                    <p>￥179.00</p>
+                                    <del>￥249.00</del>
+                                </div>
+                                 <!-- 加入购物车 -->
+                                 <div class="add-to-cart">
+                                    <a href="#" class="add-to-cart-btn">加入购物车</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-main-card">
+                            <div class="card-img">
+                                <img src="./upload/clothes-2.jpg" alt="">
+                            </div>
+                            <div class="card-content">
+                                <div class="card-category">衣服</div>
+                                <a href="#">
+                                    <h3 class="card-title">女士短袖运动上衣</h3>
+                                </a>
+                                <div class="card-rating">
+                                    <div class="iconfont icon-shixinxingxing"></div>
+                                    <div class="iconfont icon-shixinxingxing"></div>
+                                    <div class="iconfont icon-shixinxingxing"></div>
+                                    <div class="iconfont icon-shixinxingxing"></div>
+                                    <div class="iconfont icon-shixinxingxing"></div>
+                                </div>
+                                <div class="card-price-box">
+                                    <p>￥599.00</p>
+                                    <del>￥799.00</del>
+                                </div>
+                                <!-- 加入购物车 -->
+                                <div class="add-to-cart">
+                                    <a href="#" class="add-to-cart-btn">加入购物车</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-main-card">
+                            <div class="card-img">
+                                <img src="./upload/clothes-1.jpg" alt="">
+                            </div>
+                            <div class="card-content">
+                                <div class="card-category">毛衣</div>
+                                <a href="#">
+                                    <h3 class="card-title">舒适羊绒毛衣</h3>
+                                </a>
+                                <div class="card-rating">
+                                    <div class="iconfont icon-shixinxingxing"></div>
+                                    <div class="iconfont icon-shixinxingxing"></div>
+                                    <div class="iconfont icon-shixinxingxing"></div>
+                                    <div class="iconfont icon-shixinxingxing"></div>
+                                    <div class="iconfont icon-shixinxingxing"></div>
+                                </div>
+                                <div class="card-price-box">
+                                    <p>￥349.00</p>
+                                    <del>￥449.00</del>
+                                </div>
+                                <!-- 加入购物车 -->
+                                <div class="add-to-cart">
+                                    <a href="#" class="add-to-cart-btn">加入购物车</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+      </div>
+     <!-- 商品区结束 -->
+    
+
+     <!-- 服务介绍区开始 -->
+      <div>
+         <div class="wrap introduction">
+            <div class="introduction-container">
+                <!-- 创始人信息 -->
+                <div class="testimonial">
+                    <h2 class="testimonial-title">
+                        证明
+                    </h2>
+                    <div class="testimonial-card">
+                        <img src="./upload/testimonial-1.jpg" alt="艾伦·多伊创始人" class="testimonial-image">
+                        <p class="testimonial-name">艾伦·多伊</p>
+                        <p class="testimonial-title2">首席执行官兼创始人Invision</p>
+                        <img src="./images/quotes.svg" alt="引号图标" class="quotation-img">
+                        <div class="testimonial-desc">
+                            Lorem ipsum dolor sit amet consectetur Lorem ipsum
+                            dolor dolor sit amet.
+                        </div>
+                    </div>
+                </div>
+                <!-- 宣传视频区 -->
+                <div class="introduction-vedio">
+                    <video src="./vedio/时装视频.mp4" width="100%" height="auto" autoplay loop muted>
+                    </video>
+                </div>
+                <!-- 服务保障区 -->
+                 <div class="service">
+                    <h2 class="service-title">
+                        我们的服务
+                    </h2>
+                    <div class="service-card">
+                        <!-- 服务项目1 -->
+                        <a class="service-item">
+                            <div class="service-icon">
+                                <div class="iconfont icon-youchuan"></div>
+                            </div>
+                            <div class="service-content">
+                                <div class="service-title2">全球配送</div>
+                                <div class="service-desc">订单满 699 元</div>
+                            </div>
+                        </a>
+                        <!-- 服务项目2 -->
+                        <a class="service-item">
+                            <div class="service-icon">
+                                <div class="iconfont icon-Shape"></div>
+                            </div>
+                            <div class="service-content">
+                                <div class="service-title2">次日达</div>
+                                <div class="service-desc">仅限中国地区</div>
+                            </div>
+                        </a>
+                        <!-- 服务项目3 -->
+                        <a class="service-item">
+                            <div class="service-icon">
+                                <div class="iconfont icon-dianhua"></div>
+                            </div>
+                            <div class="service-content">
+                                <div class="service-title2">最佳在线支持</div>
+                                <div class="service-desc">营业时间：8:00-23:00</div>
+                            </div>
+                        </a>
+                        <!-- 服务项目4 -->
+                        <a class="service-item">
+                            <div class="service-icon">
+                                <div class="iconfont icon-fanhui"></div>
+                            </div>
+                            <div class="service-content">
+                                <div class="service-title2">退货政策</div>
+                                <div class="service-desc">简单且免费的退货</div>
+                            </div>
+                        </a>
+                        <!-- 服务项目5 -->
+                        <a class="service-item">
+                            <div class="service-icon">
+                                <div class="iconfont icon-shinshopyouhuiquan"></div>
+                            </div>
+                            <div class="service-content">
+                                <div class="service-title2">30%退款</div>
+                                <div class="service-desc">订单满 699 元</div>
+                            </div>
+                        </a>
+                    </div>
+                 </div>
+            </div>
+         </div>
+      </div>
+     <!-- 服务介绍区结束 -->
+
+     <!-- 推文区域开始 -->
+      <div class="blog">
+        <div class="wrap blog-container">
+            <div class="blog-container-flex">
+                <div class="blog-card">
+                    <a href="#" class="blog-img-box">
+                        <img src="./upload/blog/blog-1.jpg" alt="">
+                    </a>
+                    <div class="blog-content">
+                        <a href="#" class="blog-category">时尚</a>
+                        <a href="#">
+                            <h3 class="blog-title">服装零售 KPI 2021 服装高管指南。</h3>
+                        </a>
+                        <p class="blog-meta">
+                            <span>By
+                                <cite>Mr Admin</cite>
+                                /
+                                <time datetime="2024-04-06">Apr 06， 2024</time>
+                            </span>
+                        </p>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <a href="#" class="blog-img-box">
+                        <img src="./upload/blog/blog-2.jpg" alt="">
+                    </a>
+                    <div class="blog-content">
+                        <a href="#" class="blog-category">衣服</a>
+                        <a href="#">
+                            <h3 class="blog-title">路边时尚趋势: 如何赢得Pick up。</h3>
+                        </a>
+                        <p class="blog-meta">
+                            <span>By
+                                <cite>罗宾先生</cite>
+                                /
+                                <time datetime="2024-06-18">Jan 18， 2024</time>
+                            </span>
+                        </p>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <a href="#" class="blog-img-box">
+                        <img src="./upload/blog/blog-3.jpg" alt="">
+                    </a>
+                    <div class="blog-content">
+                        <a href="#" class="blog-category">经济</a>
+                        <a href="#">
+                            <h3 class="blog-title">EBT 供应商: 索取您在SNAP在线收入的份额。</h3>
+                        </a>
+                        <p class="blog-meta">
+                            <span>By
+                                <cite>赛尔萨先生</cite>
+                                /
+                                <time datetime="2024-02-10">Feb 10， 2024</time>
+                            </span>
+                        </p>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <a href="#" class="blog-img-box">
+                        <img src="./upload/blog/blog-4.jpg" alt="">
+                    </a>
+                    <div class="blog-content">
+                        <a href="#" class="blog-category">时尚</a>
+                        <a href="#">
+                            <h3 class="blog-title">路边时尚趋势: 如何赢得Pick up。</h3>
+                        </a>
+                        <p class="blog-meta">
+                            <span>By
+                                <cite>帕瓦尔先生</cite>
+                                /
+                                <time datetime="2024-03-15">Mar 15， 2024</time>
+                            </span>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+      </div>
+     <!-- 推文区域结束 -->
+
+     <!-- 版权区域开始 -->
+      <footer>
+        <!-- 品牌目录 -->
+        <div class="footer-category">
+            <div class="wrap footer-category-container">
+                <h2 class="footer-category-title">品牌目录</h2>
+                <div class="footer-category-box">
+                    <h3 class="category-box-title">时尚:</h3>
+                    <a href="#" class="footer-category-link">体恤衫</a>
+                    <a href="#" class="footer-category-link">衬衫</a>
+                    <a href="#" class="footer-category-link">短裤 & 牛仔裤</a>
+                    <a href="#" class="footer-category-link">夹克</a>
+                    <a href="#" class="footer-category-link">礼服 & 连衣裙</a>
+                    <a href="#" class="footer-category-link">内衣</a>
+                    <a href="#" class="footer-category-link">裤袜</a>
+                </div>
+                <div class="footer-category-box">
+                    <h3 class="category-box-title">鞋靴:</h3>
+                    <a href="#" class="footer-category-link">运动</a>
+                    <a href="#" class="footer-category-link">正式</a>
+                    <a href="#" class="footer-category-link">靴子</a>
+                    <a href="#" class="footer-category-link">休闲</a>
+                    <a href="#" class="footer-category-link">牛仔鞋</a>
+                    <a href="#" class="footer-category-link">安全鞋</a>
+                    <a href="#" class="footer-category-link">派对服装鞋</a>
+                    <a href="#" class="footer-category-link">高跟鞋</a>
+                </div>
+                <div class="footer-category-box">
+                    <h3 class="category-box-title">珠宝:</h3>
+                    <a href="#" class="footer-category-link">项链</a>
+                    <a href="#" class="footer-category-link">耳环</a>
+                    <a href="#" class="footer-category-link">情侣戒指</a>
+                    <a href="#" class="footer-category-link">吊坠</a>
+                    <a href="#" class="footer-category-link">水晶</a>
+                    <a href="#" class="footer-category-link">手镯</a>
+                    <a href="#" class="footer-category-link">手链</a>
+                    <a href="#" class="footer-category-link">发夹</a>
+                    <a href="#" class="footer-category-link">戒指</a>
+                </div>
+                <div class="footer-category-box">
+                    <h3 class="category-box-title">化妆品:</h3>
+                    <a href="#" class="footer-category-link">口红</a>
+                    <a href="#" class="footer-category-link">染发剂</a>
+                    <a href="#" class="footer-category-link">粉底液</a>
+                    <a href="#" class="footer-category-link">防晒霜</a>
+                    <a href="#" class="footer-category-link">香水</a>
+                    <a href="#" class="footer-category-link">腮红</a>
+                    <a href="#" class="footer-category-link">身体乳</a>
+                    <a href="#" class="footer-category-link">面霜</a>
+                    <a href="#" class="footer-category-link">眼影</a>
+                    <a href="#" class="footer-category-link">眉笔</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 版权导航 -->
+        <div class="footer-nav">
+            <div class="footer-nav-container">
+                <ul class="footer-nav-list">
+                    <h2 class="nav-title">热门分类</h2>
+                    <li class="footer-nav-item">
+                        <div class="footer-nav-link">时尚</div>
+                    </li>
+                    <li class="footer-nav-item">
+                        <div class="footer-nav-link">电子产品</div>
+                    </li>
+                    <li class="footer-nav-item">
+                        <div class="footer-nav-link">化妆品</div>
+                    </li>
+                    <li class="footer-nav-item">
+                        <div class="footer-nav-link">戒指</div>
+                    </li>
+                    <li class="footer-nav-item">
+                        <div class="footer-nav-link">手表</div>
+                    </li>
+                </ul>
+                <ul class="footer-nav-list">
+                    <h2 class="nav-title">产品</h2>
+                    <li class="footer-nav-item">
+                        <div class="footer-nav-link">价格下降</div>
+                    </li>
+                    <li class="footer-nav-item">
+                        <div class="footer-nav-link">新产品</div>
+                    </li>
+                    <li class="footer-nav-item">
+                        <div class="footer-nav-link">最佳销售</div>
+                    </li>
+                    <li class="footer-nav-item">
+                        <div class="footer-nav-link">联系我们</div>
+                    </li>
+                    <li class="footer-nav-item">
+                        <div class="footer-nav-link">网站地图</div>
+                    </li>
+                </ul>
+                <ul class="footer-nav-list">
+                    <h2 class="nav-title">我们的公司</h2>
+                    <li class="footer-nav-item">
+                        <div class="footer-nav-link">关于我们</div>
+                    </li>
+                    <li class="footer-nav-item">
+                        <div class="footer-nav-link">法律声明</div>
+                    </li>
+                    <li class="footer-nav-item">
+                        <div class="footer-nav-link">条款和条件</div>
+                    </li>
+                    <li class="footer-nav-item">
+                        <div class="footer-nav-link">加入我们</div>
+                    </li>
+                    <li class="footer-nav-item">
+                        <div class="footer-nav-link">安全支付</div>
+                    </li>
+                </ul>
+                <ul class="footer-nav-list">
+                    <h2 class="nav-title">联系我们</h2>
+                    <li class="footer-nav-item">
+                        <div class="address-box">
+                            <div class="iconfont icon-didianbiaozhu"></div>
+                            <!-- 公司地址 -->
+                             <address class="address-content">
+                                419 State 414 Rte
+                                Beaver Dams, New York(NY), 14812, USA
+                              </address>
+                        </div>
+                    </li>
+                    <li class="footer-nav-item">
+                        <div class="iconfont icon-dianhua"></div>
+                        <a href="#" class="telephone">(607) 936-8058</a>
+                    </li>
+                    <li class="footer-nav-item">
+                        <div class="iconfont icon-youjian"></div>
+                        <a href="example@gmail.com">Example@Gmail.com</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 版权支持 -->
+        <div class="footer-bottom">
+            <div class="wrap footer-bottom-container">
+                <img src="./images/payment.png" alt="付款方式">
+                <p class="copyright">版权所有 © 
+                    <a href="#">Anon</a>
+                    保留所有权利。
+                </p>
+
+            </div>
+        </div>
+     </footer>
+     <!-- 版权区域结束 -->
+
+
+     <!-- 引入js文件 -->
+    <script src="./js/index.js"></script>
+</body>
+</html>

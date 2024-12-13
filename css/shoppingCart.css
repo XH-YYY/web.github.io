@@ -1,0 +1,552 @@
+/* 顶部开始 */
+.return{
+    width: 100%;
+    height: 30px;
+    background-color:#333333;
+}
+.return-box{
+    padding: 0 100px;
+    height: 30px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+/* 返回上一级链接 */
+.back-btn{
+    width: 50px;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+}
+.back-btn:hover {
+    color: #ff8f9c; /* 鼠标悬停时的颜色 */
+}
+/* 顶部结束 */
+
+/* 头部开始 */
+.header{
+    width: 100%;
+    height: 94px;
+    padding: 25px 0;
+}
+
+.header-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 42px;
+    padding: 0 100px;
+    /* background-color: pink; */
+}
+.header .logo{
+    width: 120px;
+    height: 42px;
+    margin-left: 20px;
+    background: url(./../images/logo.svg) no-repeat;
+    background-position: 0 -120;
+}
+.search-box{
+    margin-right: 20px;
+    flex-grow: 1;/* 占据剩余空间 */
+    position: relative;
+    width: 330px;
+    height: 42px;
+}
+.form{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding-top: 20px;
+    width: 330px;
+    height: 35px;
+    border: 3px solid #ff8f9c;;
+    border-radius: 5px;
+}
+.keyword{
+    position: absolute;
+    bottom: 0;
+    left: 5px;
+    width: 290px;
+    height: 29px;
+    border: 1px solid transparent;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    line-height: 25px;
+    /* 去掉焦点框 */
+    outline: none;
+}
+.header .form button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+    padding: 8px 15px;
+    bottom: 0;
+    right: 0;
+    width: 37px;
+    height: 29px;
+    /* 去边框 */
+    border: none;
+    background-color: white;
+    /* background-color: peru; */
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+}
+.header .form button span{
+    width: 18px;
+    height: 18px;
+    font-size: 18px;
+}
+/* 悬浮时图标颜色 */
+.header .form button:hover{
+    color: #f593a5;
+}
+
+
+
+
+.cart-body{
+    /* height=auto */
+    display: flex;
+    flex-direction: column; /* 纵向布局 */
+    margin-bottom: 50px;
+    padding: 0 100px;
+    
+}
+.cart-thead{
+    height: 43px;
+    padding: 5px 0;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+    font-size: 12px;
+    color: #434343;
+    background-color: #dddddd7d;
+}
+.cart-tbody{
+    width: 1000px;
+    /* background-color: pink; */
+}
+.column{
+    float: left;
+    display: flex;
+    align-items: center;
+}
+.t-checkbox{
+    
+    padding-left: 11px;
+    width: 133px;
+    height: 32px;
+    line-height: 18px;
+    /* background-color: aquamarine; */
+}
+.cart-checkbox{
+    width: 18px;
+    height: 16px;
+    margin-right: 5px;
+}
+.t-goods{
+    width: 208px;
+    height: 32px;
+/* background-color: aquamarine; */
+}
+.t-props{
+    width: 170px;
+    height: 32px;
+    padding-left: 20px;
+    padding-right: 10px;
+    /* background-color: aquamarine; */
+}
+.t-price{
+    width: 240px;
+    height: 32px;
+    display: flex; /* 使用 flex 布局更灵活 */
+    justify-content: flex-end; /* 内容右对齐 */
+    padding-right: 135px; /* 距离右边 120px */
+    /* background-color: aquamarine; */
+}
+.t-quantity{
+    width: 150px;
+    height: 32px;
+    padding-right: 70px;
+    text-align: center;
+    /* background-color: aquamarine; */
+
+}
+.t-action{
+    width: 75px;
+    height: 32px;
+    /* background-color: aquamarine; */
+}
+.cart-tbody .item-list{
+    
+    background: #fff;    
+    border: 1px solid #f1f1f1;
+}
+.item-list{
+    width: 1000px;
+    
+    /* background-color: antiquewhite; */
+}
+.item-item{
+    position: relative;
+    padding: 0 0 1px 40px;
+    border-top: 1px solid #c5c5c5;
+    width: 998px;
+    height: 134px;
+    /* background-color: aliceblue; */
+}
+.item-form{
+    width: 949px;
+    height: 122px;
+    /* background-color: antiquewhite; */
+    font-size: 12px;
+}
+/* 表单内子元素统一向左浮动，统一内边距 */
+.item-form .cell{
+    float: left;
+    padding: 15px 0 10px;
+}
+.item-form .p-checkbox{
+    position: absolute;
+    /* 参照物有padding-left：40px */
+    left: 0;
+    top: 0;
+    z-index: 3;
+    width: 30px;
+    min-height: 10px;
+    margin-left: 10px;
+    
+}
+.cart-tbody .cart-checkbox {
+    z-index: 3;
+    float: left;
+    margin-right: 5px;
+}
+
+.item-form .p-goods {
+    width: 300px;
+    height: 107px;
+}
+
+.item-form .p-goods .goods-item {
+    display: flex; /* 使用 flexbox 布局 */
+    align-items:flex-start; /* 水平顶对齐 */
+}
+
+.p-img {
+    width: 80px;
+    height: 80px;
+    flex-shrink: 0; /* 防止图片被压缩 */
+}
+
+.p-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.p-msg {
+    flex-grow: 1; /* 占据剩余空间 */
+    margin-left: 10px; /* 与图片保持间距 */
+}
+
+.p-name a {
+    color: #333;
+    text-decoration: none;
+    line-height: 1.5;
+    display: inline-block;
+    word-wrap: break-word; /* 自动换行 */
+}
+
+.item-form .p-props {
+    width: 130px;
+    /* 高自适应 */
+    min-height: 10px;
+    line-height: 20px;
+    overflow: hidden;
+    padding: 15px 0 0 20px;
+}
+.props-txt{
+    width: 130px;
+    white-space: nowrap;
+    /* 内容超出则设为省略号 */
+    text-overflow: ellipsis;
+    overflow: hidden;
+    /* 保持默认鼠标样式 */
+    cursor: default;
+}
+.item-form .p-price{
+    padding: 15px 110px 10px 0;
+    width: 260px;
+    height: 122px;
+}
+.p-price .project-price{
+    color: #333;
+    display: block;
+    line-height: 15px;
+    margin-bottom: 6px;
+    text-align: right;
+}
+.p-quantity{
+    margin-right: 17px;
+    width: 154px;
+    height: 65px;
+    padding-right: 70px;
+}
+.p-quantity .quantity{
+    display: flex;
+    align-items: center;
+    width: 80px;
+    height: 20px;
+    border: 0;
+    overflow: hidden;
+    background-color: aliceblue;
+}
+.p-quantity .quantity input{
+    margin: 0 1px; /* 为按钮和输入框之间添加间距 */
+    width: 46px;
+    height: 20px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 400;
+    color: #787878;
+    border: 1px solid #ddd;
+    outline: none; /* 去掉聚焦时的边框 */
+    
+}
+
+.p-quantity .quantity button{
+    width: 17px;
+    height: 20px;
+    border: 1px solid #ddd;
+    color: #787878;
+}
+
+.p-ops{
+    width: 75px;
+    height: 65px;
+}
+.p-ops a{
+    color: #666666;
+}
+
+.cart-payment{
+    height: 70px;
+    margin-bottom: 50px;
+    /* background-color: aliceblue; */
+}
+.payment-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1200px;
+    height: 70px;
+    padding: 0 100px;
+    /* background-color: aquamarine; */
+}
+.sumpayment-box{
+    width: 500px;
+    display: flex;
+    align-items: center;
+}
+.sumpayment{
+    width: 50px;
+    margin-right: 5px;
+    font-size: 15px;
+    color: #787878;
+    line-height: 15px;
+}
+.sumpayment-price{
+    width: 300px;
+    font-size: 30px;
+    color: rgb(243, 72, 72);
+    font-weight: bold;
+}
+.sumpayment-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: rgb(243, 72, 72);
+}
+.sumpayment-btn a{
+    color: white;
+    letter-spacing: 2px;
+    font-weight: 600;
+    font-size: 20px;
+}
+.sumpayment-btn:hover{
+    opacity: 0.8;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 版权区开始 */
+footer{
+    padding-top: 50px;
+    padding-bottom: 30px;
+    width: 100%;
+    height: 688px;
+    background-color: #212121;
+}
+.footer-category{
+    padding-bottom: 35px;
+    margin-bottom: 50px;
+    width: 100%;
+    height: 222px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.393);
+}
+.footer-category-container{
+    margin: 0 9px;
+    padding: 0 15px;
+    height: 172px;
+    width: 1200px;
+    
+}
+.footer-category-title{
+    margin-bottom: 15px;
+    height: 23px;
+    font-size: 16px;
+    color: #FF8F9C;
+    font-weight: 600;
+}
+.footer-category-box{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    height: 22px;
+    background-color: #212121;
+}
+.category-box-title{
+    margin-right: 30px;
+    height: 21px;
+    color: #999999;
+    font-size: 14px;
+    font-weight: 600;
+}
+.footer-category-link{
+    margin-right: 10px;
+    padding-right: 10px;
+    height: 22px;
+    font-size: 15px;
+    border-right: 1px solid #787878;
+    color: #787878;
+}
+.footer-category-link:last-child{
+    border-right:none;
+}
+.footer-category-link:hover{
+    color: #999999;
+    font-weight: 500;
+    cursor: pointer;
+}
+.footer-nav{
+    padding-bottom: 50px;
+    margin-bottom: 30px;
+    height: 239px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.393);
+
+}
+.footer-nav-container{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 9px;
+    padding: 0 15px;
+    height: 188px;
+}
+.footer-nav-list{
+    width: 218px;
+    height: 188px;
+}
+.footer-nav-item{
+    display: flex;
+    align-items: center;
+    padding: 3px 0;
+    color: #787878;
+    font-size: 15px;
+}
+.nav-title{
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+    display: inline-block;/* 把h2转为行内元素使下边界线适应文本宽度*/
+    border-bottom:1px solid #FF8F9C;
+}
+.footer-nav-list:first-child{
+    margin-bottom: 20px;
+}
+.footer-nav-link{
+    height: 22px;
+   
+}
+.footer-nav-link:hover{
+    color: #FF8F9C;
+    cursor: pointer;
+}
+.icon-didianbiaozhu,
+.icon-dianhua,
+.icon-youjian{
+    color: #787878;
+    margin-right: 10px; /* 图标与文字之间的间距 */
+}
+.footer-nav-item .iconfont{
+    font-size:25px;
+}
+.footer-nav-item a{
+    color: #787878;
+}
+.footer-nav-item a:hover{
+    color: #FF8F9C;
+}
+/* 单独设置实现地址部分图标与文本顶对齐 */
+.address-box{
+    display: flex;
+}
+.footer-bottom{
+    height: 67px;
+    width: 100%;
+}
+.footer-bottom-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 9px;
+    padding: 0 15px;
+    height: 67px;
+}
+.footer-bottom-container img{
+    margin: 0 418px;
+    margin-bottom: 15px;
+    width: 335px;
+    height: 30px;
+}
+.copyright{
+    font-size: 15px;
+    color: #787878;
+}
+.copyright a{
+    /* 斜体 */
+    font-style: italic;
+    font-size: 15px;
+    color: #787878;
+}
+/* 版权区结束 */

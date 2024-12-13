@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>购物车</title>
+    <!-- 引入网页图标 -->
+    <link rel="icon" href="./images/icon.png">
+
+    <!-- 引入css样式 -->
+     <link rel="stylesheet" href="./css/base.css">
+     <link rel="stylesheet" href="./css/shoppingCart.css">
+     <link rel="stylesheet" href="./css/icon/iconfont.css">
+</head>
+<body>
+    <!-- 返回上一页 -->
+    <div class="return">
+        <div class="wrap return-box">
+            <a href="./index.html" class="back-btn">返回</a>
+        </div>  
+    </div>
+    <!-- 头部开始 -->
+     <div class="header">
+        
+        <div class="wrap header-box">
+            <div class="logo"></div>
+            
+            <div class="search-box">
+                <div class="form">
+                    <input type="text" class="keyword" placeholder="请输入关键词">
+                    <button><span class="iconfont icon-fangdajing"></span></button>
+                    <div class="searchlist"></div>
+                </div>
+            </div>
+           
+        </div>
+     </div>
+
+     <!-- 购物车内容开始 -->
+     <div class="cart">
+        <div class="wrap cart-body">
+            <div class="cart-thead">
+                <div class="column t-checkbox">
+                    <div class="cart-checkbox">
+                        <input type="checkbox" id="checkAll"> <!-- 全选复选框 -->
+                    </div>
+                    全选
+                </div>
+                <div class="column t-goods">商品</div>
+                <div class="column t-props">&nbsp;</div>
+                <div class="column t-price">单价</div>
+                <div class="column t-quantity">数量</div>
+                <div class="column t-action">操作</div>
+            </div>
+            <div class="cart-tbody">
+                <!-- 动态加载购物车商品区域 -->
+                <div class="item-list">
+
+                    <!-- 商品项渲染样式 -->
+                    <div class="item-item">
+                        <!-- 商品表单部分 -->
+                         <div class="item-form">
+                            <!-- 复选框区域 -->
+                            <div class="cell p-checkbox">
+                                <div class="cart-checkbox">
+                                    <input type="checkbox" id="checkItem">
+                                </div>
+                            </div>
+                            <!-- 商品详情区域 -->
+                             <div class="cell p-goods">
+                                <div class="goods-item">
+                                    <div class="p-img">
+                                        <a href="#">
+                                            <img src="./upload/cart/iPhone16promax.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="p-msg">
+                                        <div class="p-name">
+                                            <a href="#" title="Apple/苹果 iPhone 16 Pro Max（A3297）256GB 白色钛金属 支持移动联通电信5G 双卡双待手机">
+                                                Apple/苹果 iPhone 16 Pro Max（A3297）256GB 白色钛金属 支持移动联通电信5G 双卡双待手机
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                             </div>
+                             <!-- 颜色款式 -->
+                             <div class="cell p-props">
+                                 <div class="props-txt">白色钛金属</div>
+                                 <div class="props-txt">256g</div>
+                             </div>
+                             <!-- 单价 -->
+                              <div class="cell p-price">
+                                 <div class="project-price">
+                                    <span title="¥9499">¥9499</span>
+                                 </div>
+                              </div>
+
+                              <!-- 数量 -->
+                            <div class="cell p-quantity">
+                                <div class="cart-number quantity">
+                                    <button class="cart-number-dec">-</button>
+                                    <input type="text" value="1" min="1">
+                                    <button class="cart-number-inc">+</button>
+                                </div>
+                            </div>
+                            
+                            <!-- 操作 -->
+                             <div class="cell p-ops">
+                                <a href="#">删除</a>
+                             </div>
+                         </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+     </div>
+     <!-- 购物车内容结束 -->
+
+     <!-- 商品结算开始 -->
+      <div class="cart-payment">
+        <div class=" wrap payment-container">
+            <div class="sumpayment-box">
+                <div class="sumpayment">总价：</div>
+                <div class="sumpayment-price" id="total-price"> ￥0.00</div>
+            </div>
+            <div class="sumpayment-btn">
+                <a href="#" class="btn">结算</a>
+            </div>    
+             
+        </div>
+      </div>
+      <!-- 商品结算结束 -->
+
+
+     <!-- 版权区域开始 -->
+     <footer>
+        <!-- 品牌目录 -->
+        <div class="footer-category">
+            <div class="wrap footer-category-container">
+                <h2 class="footer-category-title">品牌目录</h2>
+                <div class="footer-category-box">
+                    <h3 class="category-box-title">时尚:</h3>
+                    <a href="#" class="footer-category-link">体恤衫</a>
+                    <a href="#" class="footer-category-link">衬衫</a>
+                    <a href="#" class="footer-category-link">短裤 & 牛仔裤</a>
+                    <a href="#" class="footer-category-link">夹克</a>
+                    <a href="#" class="footer-category-link">礼服 & 连衣裙</a>
+                    <a href="#" class="footer-category-link">内衣</a>
+                    <a href="#" class="footer-category-link">裤袜</a>
+                </div>
+                <div class="footer-category-box">
+                    <h3 class="category-box-title">鞋靴:</h3>
+                    <a href="#" class="footer-category-link">运动</a>
+                    <a href="#" class="footer-category-link">正式</a>
+                    <a href="#" class="footer-category-link">靴子</a>
+                    <a href="#" class="footer-category-link">休闲</a>
+                    <a href="#" class="footer-category-link">牛仔鞋</a>
+                    <a href="#" class="footer-category-link">安全鞋</a>
+                    <a href="#" class="footer-category-link">派对服装鞋</a>
+                    <a href="#" class="footer-category-link">高跟鞋</a>
+                </div>
+                <div class="footer-category-box">
+                    <h3 class="category-box-title">珠宝:</h3>
+                    <a href="#" class="footer-category-link">项链</a>
+                    <a href="#" class="footer-category-link">耳环</a>
+                    <a href="#" class="footer-category-link">情侣戒指</a>
+                    <a href="#" class="footer-category-link">吊坠</a>
+                    <a href="#" class="footer-category-link">水晶</a>
+                    <a href="#" class="footer-category-link">手镯</a>
+                    <a href="#" class="footer-category-link">手链</a>
+                    <a href="#" class="footer-category-link">发夹</a>
+                    <a href="#" class="footer-category-link">戒指</a>
+                </div>
+                <div class="footer-category-box">
+                    <h3 class="category-box-title">化妆品:</h3>
+                    <a href="#" class="footer-category-link">口红</a>
+                    <a href="#" class="footer-category-link">染发剂</a>
+                    <a href="#" class="footer-category-link">粉底液</a>
+                    <a href="#" class="footer-category-link">防晒霜</a>
+                    <a href="#" class="footer-category-link">香水</a>
+                    <a href="#" class="footer-category-link">腮红</a>
+                    <a href="#" class="footer-category-link">身体乳</a>
+                    <a href="#" class="footer-category-link">面霜</a>
+                    <a href="#" class="footer-category-link">眼影</a>
+                    <a href="#" class="footer-category-link">眉笔</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 版权导航 -->
+        <div class="footer-nav">
+            <div class="footer-nav-container">
+                <ul class="footer-nav-list">
+                    <h2 class="nav-title">热门分类</h2>
+                    <li class="footer-nav-item">
+                        <div class="footer-nav-link">时尚</div>
+                    </li>
+                    <li class="footer-nav-item">
+                        <div class="footer-nav-link">电子产品</div>
+                    </li>
+                    <li class="footer-nav-item">
+                        <div class="footer-nav-link">化妆品</div>
+                    </li>
+                    <li class="footer-nav-item">
+                        <div class="footer-nav-link">戒指</div>
+                    </li>
+                    <li class="footer-nav-item">
+                        <div class="footer-nav-link">手表</div>
+                    </li>
+                </ul>
+                <ul class="footer-nav-list">
+                    <h2 class="nav-title">产品</h2>
+                    <li class="footer-nav-item">
+                        <div class="footer-nav-link">价格下降</div>
+                    </li>
+                    <li class="footer-nav-item">
+                        <div class="footer-nav-link">新产品</div>
+                    </li>
+                    <li class="footer-nav-item">
+                        <div class="footer-nav-link">最佳销售</div>
+                    </li>
+                    <li class="footer-nav-item">
+                        <div class="footer-nav-link">联系我们</div>
+                    </li>
+                    <li class="footer-nav-item">
+                        <div class="footer-nav-link">网站地图</div>
+                    </li>
+                </ul>
+                <ul class="footer-nav-list">
+                    <h2 class="nav-title">我们的公司</h2>
+                    <li class="footer-nav-item">
+                        <div class="footer-nav-link">关于我们</div>
+                    </li>
+                    <li class="footer-nav-item">
+                        <div class="footer-nav-link">法律声明</div>
+                    </li>
+                    <li class="footer-nav-item">
+                        <div class="footer-nav-link">条款和条件</div>
+                    </li>
+                    <li class="footer-nav-item">
+                        <div class="footer-nav-link">加入我们</div>
+                    </li>
+                    <li class="footer-nav-item">
+                        <div class="footer-nav-link">安全支付</div>
+                    </li>
+                </ul>
+                <ul class="footer-nav-list">
+                    <h2 class="nav-title">联系我们</h2>
+                    <li class="footer-nav-item">
+                        <div class="address-box">
+                            <div class="iconfont icon-didianbiaozhu"></div>
+                            <!-- 公司地址 -->
+                             <address class="address-content">
+                                419 State 414 Rte
+                                Beaver Dams, New York(NY), 14812, USA
+                              </address>
+                        </div>
+                    </li>
+                    <li class="footer-nav-item">
+                        <div class="iconfont icon-dianhua"></div>
+                        <a href="#" class="telephone">(607) 936-8058</a>
+                    </li>
+                    <li class="footer-nav-item">
+                        <div class="iconfont icon-youjian"></div>
+                        <a href="example@gmail.com">Example@Gmail.com</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 版权支持 -->
+        <div class="footer-bottom">
+            <div class="wrap footer-bottom-container">
+                <img src="./images/payment.png" alt="付款方式">
+                <p class="copyright">版权所有 © 
+                    <a href="#">Anon</a>
+                    保留所有权利。
+                </p>
+
+            </div>
+        </div>
+     </footer>
+     <!-- 版权区域结束 -->
+
+     <script src="js/shoppingCart.js"></script>
+</body>
+</html>

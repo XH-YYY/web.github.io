@@ -1,0 +1,288 @@
+/* 顶部开始 */
+.return{
+    width: 100%;
+    height: 30px;
+    background-color:#333333;
+}
+.return-box{
+    padding: 0 100px;
+    height: 30px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+/* 返回上一级链接 */
+.back-btn0{
+    width: 50px;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+}
+.back-btn:hover {
+    color: #ff8f9c; /* 鼠标悬停时的颜色 */
+}
+/* 顶部结束 */
+
+/* 头部开始 */
+.header{
+    width: 100%;
+    height: 60px;
+    padding: 10px 0;
+    background-color: #f7f7f7;
+}
+.header-box{
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    padding: 0 100px;
+    /* background-color: pink; */
+}
+.header .logo{
+    width: 120px;
+    height: 42px;
+    margin-left: 20px;
+    background: url(./../images/logo.svg) no-repeat;
+    background-position: 0 -120;
+}
+
+/* 订单结算内容开始 */
+.order-checkout {
+    padding: 0 100px 50px 100px;
+    background-color: #f7f7f7;
+}
+.checkout-body{
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.section-header {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 600;
+    color: #333;
+}
+.address-details{
+    margin-bottom: 10px;
+}
+.address-details p {
+    margin: 5px 0;
+}
+.order-items .items-body {
+    margin-top: 20px;
+}
+.order-item {
+    display: flex;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 10px;
+}
+.items-header{
+    margin-bottom: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #333;
+}
+.order-item .order-img img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+.order-item .order-info {
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/* 订单金额区域 */
+.order-summary .summary-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.order-summary .summary-row.total {
+    font-weight: bold;
+    font-size: 18px;
+}
+.summary-price.total-price{
+    font-size: 30px;
+    color: rgb(243, 72, 72);
+
+}
+
+.checkout-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.back-btn, .submit-btn {
+    padding: 10px 20px;
+    background-color: #1a73e8;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+}
+.submit-btn {
+    background-color: #34c759;
+}
+.back-btn:hover, .submit-btn:hover {
+    opacity: 0.8;
+}
+/* 订单结算内容结束*/
+
+/* 版权区开始 */
+footer{
+    padding-top: 50px;
+    padding-bottom: 30px;
+    width: 100%;
+    height: 688px;
+    background-color: #212121;
+}
+.footer-category{
+    padding-bottom: 35px;
+    margin-bottom: 50px;
+    width: 100%;
+    height: 222px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.393);
+}
+.footer-category-container{
+    margin: 0 9px;
+    padding: 0 15px;
+    height: 172px;
+    width: 1200px;
+    
+}
+.footer-category-title{
+    margin-bottom: 15px;
+    height: 23px;
+    font-size: 16px;
+    color: #FF8F9C;
+    font-weight: 600;
+}
+.footer-category-box{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    height: 22px;
+    background-color: #212121;
+}
+.category-box-title{
+    margin-right: 30px;
+    height: 21px;
+    color: #999999;
+    font-size: 14px;
+    font-weight: 600;
+}
+.footer-category-link{
+    margin-right: 10px;
+    padding-right: 10px;
+    height: 22px;
+    font-size: 15px;
+    border-right: 1px solid #787878;
+    color: #787878;
+}
+.footer-category-link:last-child{
+    border-right:none;
+}
+.footer-category-link:hover{
+    color: #999999;
+    font-weight: 500;
+    cursor: pointer;
+}
+.footer-nav{
+    padding-bottom: 50px;
+    margin-bottom: 30px;
+    height: 239px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.393);
+
+}
+.footer-nav-container{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 9px;
+    padding: 0 15px;
+    height: 188px;
+}
+.footer-nav-list{
+    width: 218px;
+    height: 188px;
+}
+.footer-nav-item{
+    display: flex;
+    align-items: center;
+    padding: 3px 0;
+    color: #787878;
+    font-size: 15px;
+}
+.nav-title{
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+    display: inline-block;/* 把h2转为行内元素使下边界线适应文本宽度*/
+    border-bottom:1px solid #FF8F9C;
+}
+.footer-nav-list:first-child{
+    margin-bottom: 20px;
+}
+.footer-nav-link{
+    height: 22px;
+   
+}
+.footer-nav-link:hover{
+    color: #FF8F9C;
+    cursor: pointer;
+}
+.icon-didianbiaozhu,
+.icon-dianhua,
+.icon-youjian{
+    color: #787878;
+    margin-right: 10px; /* 图标与文字之间的间距 */
+}
+.footer-nav-item .iconfont{
+    font-size:25px;
+}
+.footer-nav-item a{
+    color: #787878;
+}
+.footer-nav-item a:hover{
+    color: #FF8F9C;
+}
+/* 单独设置实现地址部分图标与文本顶对齐 */
+.address-box{
+    display: flex;
+}
+.footer-bottom{
+    height: 67px;
+    width: 100%;
+}
+.footer-bottom-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 9px;
+    padding: 0 15px;
+    height: 67px;
+}
+.footer-bottom-container img{
+    margin: 0 418px;
+    margin-bottom: 15px;
+    width: 335px;
+    height: 30px;
+}
+.copyright{
+    font-size: 15px;
+    color: #787878;
+}
+.copyright a{
+    /* 斜体 */
+    font-style: italic;
+    font-size: 15px;
+    color: #787878;
+}
+/* 版权区结束 */

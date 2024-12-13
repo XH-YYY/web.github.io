@@ -1,0 +1,142 @@
+{
+  "id": "4774132",
+  "name": "MyShopping",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "17991683",
+      "name": "主页轮播按钮R_A",
+      "font_class": "zhuyelunboanniuR_A",
+      "unicode": "e616",
+      "unicode_decimal": 58902
+    },
+    {
+      "icon_id": "17991685",
+      "name": "主页轮播按钮L_A",
+      "font_class": "zhuyelunboanniuL_A",
+      "unicode": "e615",
+      "unicode_decimal": 58901
+    },
+    {
+      "icon_id": "165954",
+      "name": "返回",
+      "font_class": "fanhui",
+      "unicode": "e66e",
+      "unicode_decimal": 58990
+    },
+    {
+      "icon_id": "975306",
+      "name": "更快捷",
+      "font_class": "gengkuaijie",
+      "unicode": "e675",
+      "unicode_decimal": 58997
+    },
+    {
+      "icon_id": "1460386",
+      "name": "我的卡券",
+      "font_class": "wodeqiaquan",
+      "unicode": "e622",
+      "unicode_decimal": 58914
+    },
+    {
+      "icon_id": "5882690",
+      "name": "标准版",
+      "font_class": "Shape",
+      "unicode": "e603",
+      "unicode_decimal": 58883
+    },
+    {
+      "icon_id": "7864097",
+      "name": "shinshop 优惠券",
+      "font_class": "shinshopyouhuiquan",
+      "unicode": "e62b",
+      "unicode_decimal": 58923
+    },
+    {
+      "icon_id": "13456047",
+      "name": "数据传输快",
+      "font_class": "shujuchuanshukuai",
+      "unicode": "e774",
+      "unicode_decimal": 59252
+    },
+    {
+      "icon_id": "31313048",
+      "name": "游船",
+      "font_class": "youchuan",
+      "unicode": "e620",
+      "unicode_decimal": 58912
+    },
+    {
+      "icon_id": "816471",
+      "name": "电话",
+      "font_class": "dianhua",
+      "unicode": "e64c",
+      "unicode_decimal": 58956
+    },
+    {
+      "icon_id": "3043321",
+      "name": "地点标注",
+      "font_class": "didianbiaozhu",
+      "unicode": "e65b",
+      "unicode_decimal": 58971
+    },
+    {
+      "icon_id": "5485683",
+      "name": "邮件",
+      "font_class": "youjian",
+      "unicode": "e625",
+      "unicode_decimal": 58917
+    },
+    {
+      "icon_id": "20695000",
+      "name": "空心星星",
+      "font_class": "kongxinxingxing",
+      "unicode": "e619",
+      "unicode_decimal": 58905
+    },
+    {
+      "icon_id": "14046415",
+      "name": "实心星星",
+      "font_class": "shixinxingxing",
+      "unicode": "e609",
+      "unicode_decimal": 58889
+    },
+    {
+      "icon_id": "11372639",
+      "name": "爱心",
+      "font_class": "aixin",
+      "unicode": "e8ab",
+      "unicode_decimal": 59563
+    },
+    {
+      "icon_id": "6170861",
+      "name": "个人",
+      "font_class": "geren",
+      "unicode": "e61c",
+      "unicode_decimal": 58908
+    },
+    {
+      "icon_id": "13000503",
+      "name": "购物车",
+      "font_class": "gouwuche",
+      "unicode": "e60c",
+      "unicode_decimal": 58892
+    },
+    {
+      "icon_id": "38022735",
+      "name": "购物",
+      "font_class": "gouwu",
+      "unicode": "10183",
+      "unicode_decimal": 65923
+    },
+    {
+      "icon_id": "1221178",
+      "name": "放大镜",
+      "font_class": "fangdajing",
+      "unicode": "e6e4",
+      "unicode_decimal": 59108
+    }
+  ]
+}
